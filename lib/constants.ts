@@ -1,0 +1,58 @@
+/**
+ * 公司常量配置
+ * 佛山市梦泽精细化工有限公司
+ */
+
+export const COMPANY_INFO = {
+  name: '佛山市梦泽精细化工有限公司',
+  nameEn: 'Foshan Mengze Fine Chemical Co., Ltd.',
+  slogan: '专注水性合成乳液，全产品线53款精细化工产品',
+  description: '专业从事水性合成乳液研发、生产、销售，主营密封胶、防水涂料、彩印纸品包装胶、工业漆、植绒胶、硬挺剂等全系列产品。',
+  established: '2010',
+  address: {
+    province: '广东省',
+    city: '佛山市',
+    district: '',
+    street: '',
+    postalCode: '528000'
+  },
+  phone: '18929987773',
+  email: '',
+  contact: '罗工',
+  website: ''
+} as const;
+
+export const NAV_ITEMS = [
+  { label: '首页', href: '/' },
+  { label: '产品中心', href: '/products' },
+  { label: '关于我们', href: '/about' },
+  { label: '联系我们', href: '/contact' },
+] as const;
+
+export const ADVANTAGES = [
+  {
+    icon: 'Droplets',
+    title: '全水性产品线',
+    description: '53款产品全覆盖，水性环保，满足各行业专业需求。'
+  },
+  {
+    icon: 'Award',
+    title: '品质可靠',
+    description: '多年精细化工生产经验，每批产品经过严格质检。'
+  },
+  {
+    icon: 'Users',
+    title: '技术支持',
+    description: '专业团队提供技术咨询和解决方案，助力客户产品升级。'
+  },
+  {
+    icon: 'Zap',
+    title: '快速响应',
+    description: '充足库存，灵活配送，联系人：罗工 18929987773。'
+  }
+] as const;
+
+export const SOCIAL_LINKS = [
+  { name: '电话', icon: 'Phone', href: 'tel:18929987773' },
+  { name: '联系人', icon: 'User', contact: '罗工' }
+] as const;
