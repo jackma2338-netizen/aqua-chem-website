@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --color-card: #ffffff;
+    --color-card-foreground: #0f172a;
+    --color-popover: #ffffff;
+    --color-popover-foreground: #0f172a;
+    --color-primary: #00baa7;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #f1f5f9;
+    --color-secondary-foreground: #0f172a;
+    --color-muted: #f1f5f9;
+    --color-muted-foreground: #62748e;
+    --color-accent: #f1f5f9;
+    --color-accent-foreground: #0f172a;
+    --color-destructive: #fb2c36;
+    --color-destructive-foreground: #ffffff;
+    --color-border: #e2e8f0;
+    --color-input: #e2e8f0;
+    --color-ring: #00baa7;
+  }
+}
+
 /* ========================================
    绿源化工 - 全局样式
    AquaChem Website Global Styles
