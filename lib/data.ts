@@ -2,7 +2,7 @@
  * 产品数据 - 佛山市梦泽精细化工有限公司
  * Product Data - Foshan Mengze Fine Chemical Co., Ltd.
  * 
- * 53款产品，涵盖10大分类
+ * 60款产品，涵盖10大分类
  */
 
 export interface Product {
@@ -33,7 +33,7 @@ export const PRODUCT_CATEGORIES = [
 
 export const products: Product[] = [
 
-  // ===== 一、复合类应用（6款）=====
+  // ===== 一、复合类应用（13款）=====
   {
     id: 'c-01',
     name: '内衣复棉厂用胶',
@@ -94,6 +94,62 @@ export const products: Product[] = [
     description: '有阻燃耐火要求的产品生产专用',
     features: ['阻燃耐火'],
     applications: ['布料海绵复合加工行业', '非纺织品面料复合行业']
+  },
+  {
+    id: 'c-07',
+    name: '薄膜可移除胶 FL-5068',
+    category: 'composite',
+    description: '双组分可移丙烯酸酯共聚乳液，用于PE、PP、PET等薄膜的可移除标签/胶带',
+    features: ['初粘性好', '剥离力增长低', '耐候性好', '泡沫少', '可移除性优异'],
+    applications: ['PE/PP/PET薄膜可移除标签', '薄膜复合定位', '电子产品外壳保护膜', '家电表面保护膜', '建材不锈钢板保护膜']
+  },
+  {
+    id: 'c-08',
+    name: '薄膜半可移胶 FL-4561',
+    category: 'composite',
+    description: '单组分半可移丙烯酸酯共聚乳液，用于BOPP、PET、合成纸等薄膜半可移胶带',
+    features: ['中高剥离力', '内聚性好', '耐高温低残胶（PET 120-150℃残胶≤20%）', '持粘力≥48h'],
+    applications: ['PET瓶贴（48h无残胶）', 'BOPP/PET薄膜标签', '日化包装瓶标签', '物流运输标签', '医药包装']
+  },
+  {
+    id: 'c-09',
+    name: '普通压敏胶 AC-5829L',
+    category: 'composite',
+    description: '环保型高固含低粘度纯丙烯酸酯共聚乳液，用于BOPP、PET、PVC等普通膜胶带',
+    features: ['透明度好', '中高剥离力8-12N/in', '持粘好', '高固含低粘度', '耐候性好'],
+    applications: ['封箱胶带', '包装胶带', '普通膜胶带', '工业粘接', '印刷包装']
+  },
+  {
+    id: 'c-10',
+    name: '高性能薄膜标签压敏胶 AC-5309H',
+    category: 'composite',
+    description: '高性能薄膜标签用纯丙烯酸酯共聚乳液，种子聚合工艺，初粘高不溢胶',
+    features: ['种子聚合工艺', '初粘高≥24#', '内聚力高不溢胶', '流平好无鱼眼', '耐候不黄变'],
+    applications: ['高性能薄膜标签', '精细标签印刷', '电子元件标签', '汽车VIN标签', '医药食品包装标签']
+  },
+  {
+    id: 'c-11',
+    name: '地板胶专用改性乳液 FA-5878',
+    category: 'composite',
+    description: 'PVC地板胶专用环保改性乳液，无需另加增粘树脂，不含增塑剂，低气味低VOC',
+    features: ['无需增粘树脂即高粘合强度', '对PVC/PE发泡体润湿性好', '内聚力及耐热性优', '不含增塑剂', '低气味低VOC'],
+    applications: ['PVC片材地板胶', 'PE发泡体地板垫层', '幼儿园/健身房PVC地胶', '出口欧美环保地板胶', '旧地面翻新']
+  },
+  {
+    id: 'c-12',
+    name: '高粘压敏胶乳液 AC-5406',
+    category: 'composite',
+    description: '改性丙烯酸酯共聚物压敏胶，高初粘、表面能低、不残胶不破膜',
+    features: ['高初粘≥24#', '表面能低', '耐水耐潮', '不残胶不破膜', '可配合交联剂使用'],
+    applications: ['PVC型材表面保护膜', '电子产品外壳保护膜', '不锈钢板/铝塑板保护膜', '光面板材防护', '薄膜包装密封']
+  },
+  {
+    id: 'c-13',
+    name: 'PVC复合装饰胶 CF-6078',
+    category: 'composite',
+    description: '特殊种子聚合工艺，高固含（60%）干燥快，用于PVC装饰材料复合及高速包装贴合',
+    features: ['特殊种子聚合', '高固含60%干燥快', '流平性好不溢胶', '对PVC附着力优', '耐候性良好'],
+    applications: ['PVC装饰片材贴合', '礼品盒包装', 'BOPP/PET薄膜复合', '离型纸/格拉辛纸复合', 'PVC与纸张/织物复合']
   },
 
   // ===== 二、彩印纸品包装（10款）=====
