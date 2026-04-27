@@ -26,7 +26,7 @@ export function FeaturesSection() {
             为什么选择梦泽
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            53款全水性产品线，专业技术支持，值得信赖的精细化工供应商
+            60款全水性产品线，专业技术支持，值得信赖的精细化工供应商
           </p>
         </div>
 

@@ -37,7 +37,7 @@ export function HeroSection() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-sm mb-6">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-            <span>佛山市梦泽精细化工 · 全产品线53款</span>
+            <span>佛山市梦泽精细化工 · 全产品线60款</span>
           </div>
 
           {/* 主标题 */}
@@ -74,7 +74,7 @@ export function HeroSection() {
           {/* 统计数据 */}
           <div className="mt-12 grid grid-cols-3 gap-8 max-w-md">
             {[
-              { value: '53', label: '款产品' },
+              { value: '60', label: '款产品' },
               { value: '10', label: '大产品分类' },
               { value: '24h', label: '快速响应' },
             ].map((stat, i) => (

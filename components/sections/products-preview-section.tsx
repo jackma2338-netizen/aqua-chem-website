@@ -39,7 +39,7 @@ export function ProductsPreviewSection() {
               产品中心
             </h2>
             <p className="text-slate-600">
-              全产品线53款水性合成乳液产品，覆盖十大应用领域
+              全产品线60款水性合成乳液产品，覆盖十大应用领域
             </p>
           </div>
           <Link

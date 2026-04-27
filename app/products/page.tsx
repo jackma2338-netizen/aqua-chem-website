@@ -2,7 +2,7 @@
 
 /**
  * 产品中心页面
- * Products Page - 佛山市梦泽精细化工 53款全产品线
+ * Products Page - 佛山市梦泽精细化工 60款全产品线
  */
 
 import { useState, useMemo } from 'react';
@@ -68,7 +68,7 @@ export default function ProductsPage() {
               产品中心
             </h1>
             <p className="text-lg text-slate-300">
-              佛山市梦泽精细化工有限公司 · 全产品线53款水性合成乳液产品
+              佛山市梦泽精细化工有限公司 · 全产品线60款水性合成乳液产品
             </p>
           </div>
         </div>
