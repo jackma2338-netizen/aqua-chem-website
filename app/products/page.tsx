@@ -6,6 +6,7 @@
  */
 
 import { useState, useMemo } from 'react';
+import Image from 'next/image';
 import { Search, X, Package, Layers, Droplets, Wrench, Paintbrush, FlaskConical, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -150,10 +151,20 @@ export default function ProductsPage() {
                     id={product.id}
                     className="group border-slate-100 hover:border-teal-200 hover:shadow-lg transition-all duration-300 overflow-hidden scroll-mt-28 flex flex-col"
                   >
-                    {/* Category Badge + Icon */}
-                    <div className="h-32 bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col items-center justify-center relative gap-2">
-                      <CategoryIcon className="w-10 h-10 text-slate-300 group-hover:text-teal-400 transition-colors" />
-                      <Badge className="absolute top-3 right-3 bg-white/90 text-slate-700 text-xs">
+                    {/* Category Badge + Icon or Product Image */}
+                    <div className="h-32 bg-gradient-to-br from-slate-50 to-slate-100 relative overflow-hidden flex flex-col items-center justify-center gap-2">
+                      {product.image ? (
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        />
+                      ) : (
+                        <CategoryIcon className="w-10 h-10 text-slate-300 group-hover:text-teal-400 transition-colors" />
+                      )}
+                      <Badge className="absolute top-3 right-3 bg-white/90 text-slate-700 text-xs z-10">
                         {getCategoryLabel(product.category)}
                       </Badge>
                     </div>

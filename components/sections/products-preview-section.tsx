@@ -7,6 +7,7 @@
  */
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Package, Layers, Droplets, Wrench, Paintbrush, FlaskConical } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -64,10 +65,22 @@ export function ProductsPreviewSection() {
                 key={product.id}
                 className="group border-slate-100 hover:border-amber-200 hover:shadow-lg transition-all duration-300 overflow-hidden"
               >
-                {/* Product Image Placeholder */}
-                <div className="h-36 bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col items-center justify-center relative gap-2">
-                  <CategoryIcon className="w-10 h-10 text-slate-300 group-hover:text-amber-400 transition-colors" />
-                  <Badge className="absolute top-3 right-3 bg-white/90 text-slate-700 hover:bg-white shadow-sm text-xs">
+                {/* Product Image / Icon Placeholder */}
+                <div className="h-36 bg-gradient-to-br from-slate-50 to-slate-100 relative overflow-hidden">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <CategoryIcon className="w-10 h-10 text-slate-300 group-hover:text-amber-400 transition-colors" />
+                    </div>
+                  )}
+                  <Badge className="absolute top-3 right-3 bg-white/90 text-slate-700 hover:bg-white shadow-sm text-xs z-10">
                     {categoryLabel}
                   </Badge>
                 </div>

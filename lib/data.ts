@@ -15,6 +15,8 @@ export interface Product {
   specifications?: Record<string, string>;
   warranty?: string;
   process?: string;
+  /** 产品主图相对路径，如 /images/product-o-02-glitter-adhesive.png */
+  image?: string;
 }
 
 export const PRODUCT_CATEGORIES = [
@@ -555,9 +557,10 @@ export const products: Product[] = [
     id: 'o-02',
     name: '金葱粉胶',
     category: 'other',
-    description: '用于金葱粉加工',
-    features: ['金葱粉加工专用'],
-    applications: ['金葱粉加工']
+    description: '用于金葱粉加工，呈现金色闪粉质感效果',
+    features: ['金色闪粉质感', '附着力强', '施工便捷'],
+    applications: ['金葱粉加工', 'DIY手工', '礼品包装'],
+    image: '/images/product-o-02-glitter-adhesive.png',
   },
   {
     id: 'o-03',
