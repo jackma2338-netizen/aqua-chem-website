@@ -8,8 +8,17 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { COMPANY_INFO, NAV_ITEMS } from '@/lib/constants';
+import { products, PRODUCT_CATEGORIES } from '@/lib/data';
 
 export function Footer() {
+  // 动态计算各分类产品数量
+  const categoryCounts = PRODUCT_CATEGORIES
+    .filter(c => c.value !== 'all')
+    .map(cat => ({
+      label: cat.label,
+      count: products.filter(p => p.category === cat.value).length,
+    }));
+
   return (
     <footer className="bg-slate-900 text-slate-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
@@ -59,16 +68,9 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">产品分类</h3>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li>复合类应用（6款）</li>
-              <li>彩印纸品包装（10款）</li>
-              <li>密封胶系列（3款）</li>
-              <li>防水涂料系列（6款）</li>
-              <li>建筑装饰胶系列（4款）</li>
-              <li>工业漆系列（2款）</li>
-              <li>植绒胶系列（6款）</li>
-              <li>硬挺类应用（7款）</li>
-              <li>家具类（5款）</li>
-              <li>其他（4款）</li>
+              {categoryCounts.map(({ label, count }) => (
+                <li key={label}>{label}（{count}款）</li>
+              ))}
             </ul>
           </div>
 

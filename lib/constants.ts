@@ -6,20 +6,20 @@
 export const COMPANY_INFO = {
   name: '佛山市梦泽精细化工有限公司',
   nameEn: 'Foshan Mengze Fine Chemical Co., Ltd.',
-  slogan: '专注水性合成乳液，全产品线53款精细化工产品',
-  description: '专业从事水性合成乳液研发、生产、销售，主营密封胶、防水涂料、彩印纸品包装胶、工业漆、植绒胶、硬挺剂等全系列产品。',
+  slogan: '专注水性合成乳液，全产品线60款精细化工产品',
+  description: '佛山市梦泽精细化工有限公司专业从事水性合成乳液研发、生产与销售，主营密封胶、防水涂料、彩印纸品包装胶、工业漆、植绒胶、硬挺剂等60款全系列产品，覆盖复合、纸品包装、密封胶、防水、建筑装饰、工业漆、植绒、硬挺、家具等十大应用领域。',
   established: '2010',
   address: {
     province: '广东省',
     city: '佛山市',
-    district: '',
-    street: '',
+    district: '顺德区',
+    street: '请填写具体街道地址',
     postalCode: '528000'
   },
   phone: '18929987773',
-  email: '',
+  email: '18929987773@163.com',
   contact: '罗工',
-  website: ''
+  website: 'aqua-chem-website.vercel.app'
 } as const;
 
 export const NAV_ITEMS = [
@@ -33,7 +33,7 @@ export const ADVANTAGES = [
   {
     icon: 'Droplets',
     title: '全水性产品线',
-    description: '53款产品全覆盖，水性环保，满足各行业专业需求。'
+    description: '60款产品全覆盖，水性环保，满足各行业专业需求。'
   },
   {
     icon: 'Award',
